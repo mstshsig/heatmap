@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCnQ-s5r97zMuVHYxKBj_JXLFiRcevc5NY",
+        authDomain: "fir-map-1493795894961.firebaseapp.com",
+        databaseURL: "https://fir-map-1493795894961.firebaseio.com",
+        projectId: "firebase-map-1493795894961",
+        storageBucket: "firebase-map-1493795894961.appspot.com",
+        messagingSenderId: "564975197691"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <style type="text/css">
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="show_result"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy7bU4LHpD0doktL7PFPqY0hXnU8770ss&libraries=visualization&callback=initMap">
+    </script>
+
+    /**
+     * The JavaScript code that creates the firebase map goes between the empty script tags below.
+     */
+    <script src="firebasemap.js"></script>
+
+  </body>
+</html>
